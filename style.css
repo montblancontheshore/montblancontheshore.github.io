@@ -1,0 +1,335 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  color: #24292e;
+}
+a{
+  text-decoration: none;
+}
+img{
+  max-width: 100%;
+}
+li{
+  list-style: none;
+}
+.wrapper{
+  max-width: 100%;
+  margin: 0 auto 130px auto;
+  font-size: 0.9rem;
+  padding: 0 4%;
+}
+.site-title {
+  line-height: 1px;
+}
+.site-title a {
+  display: block;
+}
+.sec-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 65px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+#header {
+  max-width: 960px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 180px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+#header ul {
+  display: flex;
+  padding: 10px 0;
+}
+#header li {
+  font-size: 0.9rem;
+  margin-left: 30px;
+}
+#header li a {
+  color: #24292e;
+}
+#header li a:hover {
+  opacity: 0.7;
+}
+#header li img.icon {
+  width: 20px;
+}
+/*-------------------------------------------
+Mainvisual
+-------------------------------------------*/
+#mainvisual {
+  margin-bottom: 50px;
+}
+#mainvisual img {
+  width: 100%;
+  max-width: 1920px;
+  height: 800px;
+  object-fit: cover;
+}
+
+/*---------
+schedule
+----------*/
+
+#schedule dl {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: solid 1px #c8c8c8;
+  margin:0 auto 20px;
+  width: 50%;
+}
+#schedule dt {
+  width: 20%;
+  border-bottom: solid 1px #c8c8c8;
+  padding: 15px;
+}
+#schedule dd {
+  width: 80%;
+  border-bottom: solid 1px #c8c8c8;
+  padding: 15px;
+}
+#schedule dd a{
+  border-bottom: solid 1px mediumblue;
+}
+
+
+/*-----------
+works
+-----------*/
+
+#ina ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+#ina li {
+  width: 45%;
+  margin-bottom: 23px;
+}
+
+#ina h3{
+  font-size: small;
+  text-align: center;
+  padding-bottom: 20px;
+  font-weight: lighter;
+  font-size: smaller;
+}
+
+#ina img{
+  width: 60%;
+  padding:0 20% 10%;
+}
+
+
+
+.abstract-photo{
+  padding: 0 10%;
+  width: 80%;
+}
+
+.abstract{
+  margin-bottom: 50px;
+}
+
+#aki h3{
+  font-size: small;
+  text-align: center;
+  padding-bottom: 20px;
+  font-weight: lighter;
+}
+
+#aki ul {
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+#aki li {
+  flex: float;
+  width: 31%;
+  margin-bottom: 23px;
+}
+
+#teiri p{
+  text-align: center;
+}
+
+#teiri ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+#teiri li {
+  width: 31%;
+  margin-bottom: 23px;
+}
+
+/*----------
+profile
+-----------*/
+
+#profile ul {
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+#profile li {
+  flex: float;
+  width: 33%;
+  margin-bottom: 23px;
+}
+#profile p {
+  text-align:justify;
+  margin: 0 auto;
+  width:70%;
+}
+
+/*----------
+message
+------------*/
+#message p{
+  text-align: center;
+  width: 80%;
+  margin: 30px auto;
+}
+
+.googleform{
+  padding: 50px;
+  margin: auto;
+}
+#message a{
+  background-color:cadetblue;
+  padding: 20px;
+  color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px #7e8183e6;
+}
+
+#message a:hover{
+  opacity: 0.9;
+}
+
+#message a:active{
+  position: relative;
+  box-shadow: none;
+  top: 6px
+}
+
+#message{
+  margin: 0 auto 50px;
+}
+
+/*-------------------------------------------
+フッター
+-------------------------------------------*/
+#footer {
+  background-color: #24292e;
+  color: #fff;
+  font-size: 0.5rem;
+  padding: 10px 20px;
+  text-align: center;
+  height: 100px;
+}
+#footer a{
+  color: #fff;
+}
+#footer ul{
+  display: flex;
+  justify-content:space-between;
+  margin: 30px auto;
+  width: 50%;
+}
+
+
+/*----------------------------
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 600px) {
+  .wrapper {
+    margin-bottom: 70px;
+  }
+  .site-title {
+    margin-top: 20px;
+  }
+  .sec-title {
+    margin-bottom: 40px;
+  }
+
+  /*-------------------------------------------
+  ヘッダー
+  -------------------------------------------*/
+  #header {
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  #header li {
+    font-size: 0.8rem;
+    margin-left: 20px;
+  }
+  #header li:first-child {
+    margin-left: 0;
+  }
+
+  /*-------------------------------------------
+  Works
+  -------------------------------------------*/
+  #ina ul {
+    flex-direction: column;
+  }
+  #ina li {
+    width: 100%;
+  }
+
+  #aki ul {
+    display: block !important;;
+    flex-direction: column;
+  }
+
+  #aki li {
+    width: 100%;
+  }
+  #teiri ul {
+    flex-direction: column;
+  }
+
+  #teiri li {
+    width: 100%;
+  }
+
+
+
+  /*-------------------------------------------
+  schedule
+  -------------------------------------------*/
+  #schedule dl {
+    flex-direction: column;
+  }
+  #schedule dt {
+    width: 100%;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  #schedule dd {
+    width: 100%;
+    padding-top: 0;
+  }
+}
+
+/*----------------
+profile
+----------------*/
